@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />   -->
+    <link rel="stylesheet" href="index.css">  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">   
+    <title>Music Web</title>
+</head>
+<body>
+    <header>
+
+        <!--  Playlist-section -->
+        <div class="menu-side">
+            <h1>Playlist</h1>
+            <div class="playlist">
+                <h4 class="active"><span></span><i class="bi bi-music-note-beamed"></i>Playlist</h4>
+                <h4 class="active"><span></span><i class="bi bi-music-note-beamed"></i>Last Listening</h4>
+                <h4 class="active"><span></span><i class="bi bi-music-note-beamed"></i>Recommended</h4>
+            </div>
+
+            <!-- Song Menu Section -->
+
+            <div class="menu-song">
+             <li class="songItem">
+                <span>01</span>
+                <img src="https://i.pinimg.com/564x/00/89/fa/0089faaaca8be8bbc4c7039bc40f3c41.jpg" alt="Falak Tak">
+                <h5>
+                    Falak Tak <br>
+                    <div class="subtitle">Udit Narayan</div>
+                </h5>
+                    <i class="bi playlistPlay bi-play-circle-fill" id="1"></i>
+             </li>
+             <li class="songItem">
+                <span>02</span>
+                <img src="https://i.pinimg.com/564x/9b/6b/b4/9b6bb423ab0b59b3aa134941cfeb2d31.jpg" alt="First Kiss">
+                <h5>
+                    First Kiss <br>
+                    <div class="subtitle">Honey singh</div>
+                </h5>
+                    <i class="bi playlistPlay bi-play-circle-fill" id="2"></i>
+             </li>
+             <li class="songItem">
+                <span>03</span>
+                <img src="https://i.pinimg.com/564x/3d/6b/f6/3d6bf6c5a31d1c26ddac3298586dda9d.jpg" alt="Excuses">
+                <h5>
+                    Excuses <br>
+                    <div class="subtitle">Ap Dillon</div>
+                </h5>
+                    <i class="bi playlistPlay bi-play-circle-fill" id="3"></i>
+             </li>
+             <li class="songItem">
+                <span>04</span>
+                <img src="https://i.pinimg.com/564x/d0/09/8d/d0098d48b06c1a757e83100023f3dd30.jpg" alt="Fashoin">
+                <h5>
+                    Fashoin <br>
+                    <div class="subtitle">Guru Randhawa </div>
+                </h5>
+                    <i class="bi playlistPlay bi-play-circle-fill" id="4"></i>
+             </li>
+             <li class="songItem">
+                <span>05</span>
+                <img src="https://i.pinimg.com/236x/22/15/b5/2215b5dd593080de2e46f95cac4e9144.jpg" alt="Akhil">
+                <h5>
+                    Gaddaar <br>
+                    <div class="subtitle">Akhil</div>
+                </h5>
+                    <i class="bi playlistPlay bi-play-circle-fill" id="5"></i>
+             </li>
+             <li class="songItem">
+                <span>06</span>
+                <img src="https://i.pinimg.com/564x/5f/a9/89/5fa9890d28231e4fef9241bf91f94dcc.jpg" alt="Arijit singh">
+                <h5>
+                    Fitoor <br>
+                    <div class="subtitle">Arijit Singh</div>
+                </h5>
+                    <i class="bi playlistPlay bi-play-circle-fill" id="6"></i>
+             </li>
+             
+            </div>
+        </div> 
+        
+        <!-- Song Side Section -->
+
+        <div class="song-side">
+            <!-- Nav-Bar-section -->
+            <nav>
+                <ul>
+                    <li>Discover<span></span></li>
+                    <li>MY LIBRARY</li>
+                    <li>Radio</li>
+                </ul>
+                <div class="search-sec">
+                    <i class="bi bi-search"></i>
+                    <input type="text" placeholder="Search Music..">
+                </div>
+                <div class="user-sec">
+                    <img src="https://i.pinimg.com/236x/89/26/e3/8926e39771a89616200c657fcd16b54f.jpg" alt="">
+                </div>
+            </nav>
+           
+            <!-- Music Content section -->
+            <div class="music-content">
+                <h1>Alan Walkar Fade</h1>
+                <p>
+                    You were the shadow to my light Did you feel us? Another star, you fade away
+                   <br>  Afraid our aim is out of sight Wanna see us alight
+                </p>
+
+                <!-- Button -->
+
+                <div class="button-sec">
+                    <button>Play</button>
+                    <button>Follow</button>
+                </div>
+            </div>
+                 
+            <!-- Popular music section -->
+            <div class="popular-music-sec">
+             <div class="sub-heading-sec">
+                <h4>Populer songs</h4>
+                <div class="popular-song-button">
+                <i class="bi bi-arrow-left-short" id="pop_left_scroll"></i>
+                <i class="bi bi-arrow-right-short" id="pop_right_scroll"></i>
+                </div>
+             </div>
+
+             <!-- Popular Song Section  -->
+             <div class="pop-song-sec">
+                <li class="pop-song-item">
+                    <div class="pop-img-sec">
+                    <img src="https://i.pinimg.com/564x/00/89/fa/0089faaaca8be8bbc4c7039bc40f3c41.jpg" alt="Falak Tak">
+                    <i class="bi playlistPlay bi-play-circle-fill" id="7"></i>
+                    </div>
+                    <h5>Falak Tak 
+                        <br>
+                    <div class="subtitle">Udit Narayan</div>
+                    </h5>
+                </li>
+
+                <li class="pop-song-item">
+                    <div class="pop-img-sec">
+                    <img src="https://i.pinimg.com/564x/9b/6b/b4/9b6bb423ab0b59b3aa134941cfeb2d31.jpg" alt="First Kiss">
+                    <i class="bi playlistPlay bi-play-circle-fill" id="8"></i>
+                    </div>
+                    <h5>First Kiss
+                        <br>
+                    <div class="subtitle">Honey Singh</div>
+                    </h5>
+                </li>
+                <li class="pop-song-item">
+                    <div class="pop-img-sec">
+                    <img src="https://i.pinimg.com/564x/3d/6b/f6/3d6bf6c5a31d1c26ddac3298586dda9d.jpg" alt="Excuses">
+                    <i class="bi playlistPlay bi-play-circle-fill" id="9"></i>
+                    </div>
+                    <h5>Excuses
+                        <br>
+                    <div class="subtitle">Ap Dillon</div>
+                    </h5>
+                </li>
+                <li class="pop-song-item">
+                    <div class="pop-img-sec">
+                    <img src="https://i.pinimg.com/564x/ed/c5/7b/edc57bae370688b91f5c3ee259053409.jpg" alt="Alan">
+                    <i class="bi playlistPlay bi-play-circle-fill" id="10"></i>
+                    </div>
+                    <h5>On My Way 
+                        <br>
+                    <div class="subtitle">Alan Walkar</div>
+                    </h5>
+                </li>
+                <li class="pop-song-item">
+                    <div class="pop-img-sec">
+                    <img src="https://i.pinimg.com/564x/5f/a9/89/5fa9890d28231e4fef9241bf91f94dcc.jpg" alt="Fitoor">
+                    <i class="bi playlistPlay bi-play-circle-fill" id="11"></i>
+                    </div>
+                    <h5>Fitoor
+                        <br>
+                    <div class="subtitle">Arijit Singh</div>
+                    </h5>
+                </li>
+                <li class="pop-song-item">
+                    <div class="pop-img-sec">
+                    <img src="https://i.pinimg.com/564x/30/50/5e/30505e4bd3f26deb03a439d4e0b318bf.jpg" alt="Akhil">
+                    <i class="bi playlistPlay bi-play-circle-fill" id="12"></i>
+                    </div>
+                    <h5>Gani
+                        <br>
+                    <div class="subtitle">Akhil</div>
+                    </h5>
+                </li><li class="pop-song-item">
+                    <div class="pop-img-sec">
+                    <img src="https://i.pinimg.com/564x/0d/fc/8a/0dfc8afc0a870c4b08050b3bd1e7de0d.jpg" alt="Aitraaz">
+                    <i class="bi playlistPlay bi-play-circle-fill" id="13"></i>
+                    </div>
+                    <h5>Gela Gela Gela
+                        <br>
+                    <div class="subtitle">Aitraaz</div>
+                    </h5>
+                </li>
+                <li class="pop-song-item">
+                    <div class="pop-img-sec">
+                    <img src="https://i.pinimg.com/564x/6a/3a/b5/6a3ab5e05f10aef84db2f7c92058f964.jpg" alt="Friends">
+                    <i class="bi playlistPlay bi-play-circle-fill" id="14"></i>
+                    </div>
+                    <h5>Friends
+                        <br>
+                    <div class="subtitle">Friends</div>
+                    </h5>
+                </li>
+                <li class="pop-song-item">
+                    <div class="pop-img-sec">
+                    <img src="https://i.pinimg.com/564x/32/ae/2c/32ae2c2dec30dea9fec0874ea8899476.jpg" alt="Gale lag ja">
+                    <i class="bi playlistPlay bi-play-circle-fill" id="15"></i>
+                    </div>
+                    <h5>Gale Lag Ja
+                        <br>
+                    <div class="subtitle">Gale Lag Ja</div>
+                    </h5>
+                </li>
+                <li class="pop-song-item">
+                    <div class="pop-img-sec">
+                    <img src="https://i.pinimg.com/736x/a0/ea/cc/a0eacca5fe78b490cdb2a80ce2d46790.jpg" alt="Ghalat Fehami">
+                    <i class="bi playlistPlay bi-play-circle-fill" id="16"></i>
+                    </div>
+                    <h5>Ghalat Fehmi
+                        <br>
+                    <div class="subtitle">Ghalat Fehmi</div>
+                    </h5>
+                </li>
+             </div>
+            </div>
+
+            <!-- Artist Section -->
+
+            <div class="popular-artist-sec">
+                <div class="sub-heading-sec">
+                   <h4>Populer Artist</h4>
+                   <div class="popular-artis-button">
+                   <i class="bi bi-arrow-left-short"  id="left_scroll_artist"></i>
+                   <i class="bi bi-arrow-right-short" id="right_scroll_artist"></i>
+                </div>
+                </div>
+
+                <!-- Artist item section -->
+
+                <div class="artist-item-sec">
+                    <li>
+                        <img src="https://i.pinimg.com/236x/45/8b/63/458b6310aea2c73dae343641f167af0c.jpg" alt="Arijit singh">
+                    </li>
+                    <li>
+                        <img src="https://i.pinimg.com/564x/c0/25/76/c025763154f6a607a9ee7248e99688b7.jpg" alt="Arijit singh">
+                    </li>
+                    <li>
+                        <img src="https://i.pinimg.com/564x/64/aa/31/64aa3189cdef60e854af39dd2af755da.jpg" alt="Arijit singh">
+                    </li>
+                    <li>
+                        <img src="https://i.pinimg.com/564x/84/36/42/843642ea8b294306306e83b5ada0e833.jpg" alt="Arijit singh">
+                    </li>
+                    <li>
+                        <img src="https://i.pinimg.com/564x/f8/bc/86/f8bc86048e9245bd7d75472329f681af.jpg" alt="Arijit singh">
+                    </li>
+                    <li>
+                        <img src="https://i.pinimg.com/736x/d5/4e/36/d54e3646b4d7221981b18ab3d3aff844.jpg" alt="Arijit singh">
+                    </li>
+                    <li>
+                        <img src="https://i.pinimg.com/236x/3d/a4/2a/3da42ab787320b94c67e52252fab69f6.jpg" alt="Arijit singh">
+                    </li>
+                    <li>
+                        <img src="https://i.pinimg.com/564x/a4/99/a4/a499a44dce50eef65b39d6ed941c999c.jpg" alt="Arijit singh">
+                    </li>
+                    <li>
+                        <img src="https://i.pinimg.com/236x/71/45/18/714518fe11d5f58c49e4feeb180bbe55.jpg" alt="Arijit singh">
+                    </li>
+                    <li>
+                        <img src="https://i.pinimg.com/564x/86/16/95/8616952afc988710d52b803c46965f2e.jpg" alt="Arijit singh">
+                    </li>
+                    <li>
+                        <img src="https://i.pinimg.com/564x/64/24/8b/64248b37df95c916b1bd63da4d1daa48.jpg" alt="Arijit singh">
+                    </li>
+                    <li>
+                        <img src="https://i.pinimg.com/564x/8a/2b/34/8a2b34e08a7c4fc25ecb4aef5202248f.jpg" alt="Arijit singh">
+                    </li>
+                    <li>
+                        <img src="https://i.pinimg.com/564x/3a/0c/f1/3a0cf1d844367b3fd74b076790e7a272.jpg" alt="Arijit singh">
+                    </li>
+                    <li>
+                        <img src="https://i.pinimg.com/564x/1a/fd/65/1afd6524d1bb543d93a1012908181263.jpg" alt="Arijit singh">
+                    </li>
+                    <li>
+                        <img src="https://i.pinimg.com/564x/e7/f2/5a/e7f25ac0c75cb46bb670ba59a9ca8dfc.jpg" alt="Arijit singh">
+                    </li>
+                </div>
+          </div>
+        </div>
+
+
+        <!-- Master Play Section -->
+        <div class="master-play">
+            <div class="wave" id="wave">
+                <div class="wave1"></div>
+                <div class="wave1"></div>
+                <div class="wave1"></div>
+            </div>
+            <img src="https://i.pinimg.com/564x/00/89/fa/0089faaaca8be8bbc4c7039bc40f3c41.jpg" alt="Alan Walkar" srcset="" id="master_Play_poster">
+            <h5 id="title_play">Falak Tak <br>
+                <div class="subtitle">Falak Tak</div>                
+            </h5>
+            <div class="icon">
+                <i class="bi bi-skip-start-fill" id="backSong"></i>
+                <i class="bi bi-play-fill" id="masterPlay"></i>
+                <i class="bi bi-skip-end-fill" id="nextSong"></i>
+            </div>
+            <span id="current-start">0:00</span>
+            <div class="play-bar">
+                <input type="range" name="" id="seek" min="0" value="0" max="100">
+                <div class="play-bar-sub" id="play-bar-sub"></div>
+                <div class="play-dot" ></div>
+            </div>
+            <span id="current-end">0:00</span>
+            <div class="vol-icon">
+                <i class="bi bi-volume-up-fill"></i>
+                <input type="range" name="" id="vol_icon" min="0" value="30" max="100">
+                <div class="vol-bar-sub"></div>
+                <div class="vol-dot" id="vol-dot"></div>
+            </div>
+        </div>
+    </header> 
+    <script src="index.js"></script>
+   <audio src="/Html Tutorial/mymusic/ Falak Tak .mp3"></audio>
+</body>
+</html>
